@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:paddingTop="?attr/actionBarSize">
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"
@@ -34,30 +35,11 @@
         app:navGraph="@navigation/mobile_navigation" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:icon="@android:drawable/ic_menu_add"
-        app:iconTintMode="add"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="557dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:icon="@android:drawable/ic_menu_add"
-        app:iconTintMode="add"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="561dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:icon="@android:drawable/ic_menu_add"
-        app:iconTintMode="add"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="561dp" />
+        android:text="button"
+        android:onClick="sendMessage"
+        android:background="@drawable/button_custom"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
